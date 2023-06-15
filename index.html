@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro section with dropdown navigation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="header wrapper--m">
+    <nav class="navbar">
+        <a href="/"><img class="navbar__logo" src="/images/logo.svg" alt="logo"></a>
+        <img class="navbar__icon navbar__icon--hamburger" data-hamburger src="/images/icon-menu.svg" alt="icon-hamburger">
+        <div class="navbar__menu" data-mobile-menu>
+            <img class="navbar__icon navbar__icon--close" data-close-mobile-menu src="/images/icon-close-menu.svg" alt="icon-close">
+            <ul class="menu">
+                <li class="menu__item menu__item--dropdown" data-dropdown>
+                    <a class="menu__link menu__link--dropdown" data-dropdown-link href="#">Features</a>
+                    <div class="menu--inner-container">
+                        <ul class="menu menu--inner">
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--icon" href="#">
+                                    <img class="menu__icon" src="/images/icon-todo.svg" alt="icon-menu">
+                                    <span>Todo List</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--icon" href="#">
+                                    <img class="menu__icon" src="/images/icon-calendar.svg" alt="icon-menu">
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--icon" href="#">
+                                    <img class="menu__icon" src="/images/icon-reminders.svg" alt="icon-menu">
+                                    <span>Reminders</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--icon" href="#">
+                                    <img class="menu__icon" src="/images/icon-planning.svg" alt="icon-menu">
+                                    <span>Planning</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu__item menu__item--dropdown" data-dropdown>
+                    <a class="menu__link menu__link--dropdown" data-dropdown-link href="#">Company</a>
+                    <div class="menu--inner-container">
+                        <ul class="menu menu--inner">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    History
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Our Team
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Careers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">About</a>
+                </li>
+            </ul>
+            <a class="navbar__login" href="#">Login</a>
+            <a class="btn navbar__register" href="#">Register</a>
+        </div>
+        <div class="navbar__menu-desktop">
+            <ul class="menu-desktop">
+                <li class="menu__item-desktop menu__item--dropdown-desktop" data-dropdown-desktop>
+                    <a class="menu__link-desktop menu__link--dropdown-desktop" data-dropdown-link-desktop href="#">Features</a>
+                    <div class="menu--inner-container-desktop" data-submenu-desktop>
+                        <ul class="menu--inner-desktop">
+                            <li class="menu__item-desktop">
+                                <a class="menu__link-desktop menu__link-desktop--icon" href="#">
+                                    <img class="menu__icon-desktop" src="/images/icon-todo.svg" alt="icon-menu">
+                                    <span>Todo List</span>
+                                </a>
+                            </li>
+                            <li class="menu__item-desktop">
+                                <a class="menu__link-desktop menu__link-desktop--icon" href="#">
+                                    <img class="menu__icon-desktop" src="/images/icon-calendar.svg" alt="icon-menu">
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+                            <li class="menu__item-desktop">
+                                <a class="menu__link-desktop menu__link-desktop--icon" href="#">
+                                    <img class="menu__icon-desktop" src="/images/icon-reminders.svg" alt="icon-menu">
+                                    <span>Reminders</span>
+                                </a>
+                            </li>
+                            <li class="menu__item-desktop">
+                                <a class="menu__link-desktop menu__link-desktop--icon" href="#">
+                                    <img class="menu__icon-desktop" src="/images/icon-planning.svg" alt="icon-menu">
+                                    <span>Planning</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu__item-desktop menu__item--dropdown-desktop" data-dropdown-desktop>
+                    <a class="menu__link-desktop menu__link--dropdown-desktop" data-dropdown-link-desktop href="#">Company</a>
+                    <div class="menu--inner-container-desktop" data-submenu-desktop>
+                        <ul class="menu--inner-desktop">
+                            <li class="menu__item-desktop">
+                                <a class="menu__link-desktop" href="#">
+                                    History
+                                </a>
+                            </li>
+                            <li class="menu__item-desktop">
+                                <a class="menu__link-desktop" href="#">
+                                    Our Team
+                                </a>
+                            </li>
+                            <li class="menu__item-desktop">
+                                <a class="menu__link-desktop" href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu__item-desktop">
+                    <a class="menu__link-desktop" href="#">Careers</a>
+                </li>
+                <li class="menu__item-desktop">
+                    <a class="menu__link-desktop" href="#">About</a>
+                </li>
+            </ul>
+            <a class="navbar__login-desktop" href="#">Login</a>
+            <a class="btn navbar__register-desktop" href="#">Register</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="hero wrapper--d">
+        <div class="hero__photo">
+            <picture>
+                <source media="(min-width: 62em)" srcset="/images/image-hero-desktop.png">
+                <img class="hero__img" src="/images/image-hero-mobile.png" alt="remote work">
+            </picture>
+        </div>
+        <div class="hero__content wrapper--m">
+            <div class="hero__text">
+                <h1 class="hero__title">Make remote work</h1>
+                <p class="hero__description">Get your team in sync, no matter your location. Streamline processes,
+                    create team rituals, and watch productivity soar.
+                </p>
+                <a class="btn btn--black hero__link" href="#">Learn more</a>
+            </div>
+            <div class="hero__clients">
+                <img class="hero__client-photo" src="/images/client-databiz.svg" alt="databiz">
+                <img class="hero__client-photo" src="/images/client-audiophile.svg" alt="audiophile">
+                <img class="hero__client-photo" src="/images/client-meet.svg" alt="meet">
+                <img class="hero__client-photo" src="/images/client-maker.svg" alt="maker">
+            </div>
+        </div>
+    </section>
+</main>
+<div class="overlay" data-overlay></div>
+</body>
+</html>
