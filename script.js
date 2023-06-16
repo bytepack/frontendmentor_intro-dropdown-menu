@@ -34,7 +34,8 @@ function closeMobileMenu() {
 }
 
 function handleMobileDropDown(e) {
-    const isDropDown = e.target.matches("[data-dropdown-link]")
+    const isDropDown = e.target.matches("[data-dropdown-link]") ||
+        e.target.matches(("[data-dropdown]"))
 
     if (isDropDown) {
         const currentDropdown = e.target.closest("[data-dropdown]")
@@ -47,7 +48,8 @@ function handleMobileDropDown(e) {
 }
 
 function handleDesktopDropDown(e) {
-    const isDropDown = e.target.matches("[data-dropdown-link-desktop]")
+    const isDropDown = e.target.matches("[data-dropdown-link-desktop]") ||
+        e.target.matches("[data-dropdown-desktop]")
 
     // if it's clicked on the submenu do nothing
     if (!isDropDown && e.target.closest("[data-dropdown-desktop]")) return

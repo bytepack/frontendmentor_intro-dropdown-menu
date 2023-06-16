@@ -171,6 +171,9 @@ a:active{
     padding-top: 3rem;
 }
 
+.menu__item{
+    cursor: pointer;
+}
 .menu--inner {
     overflow: hidden;
 }
@@ -274,6 +277,10 @@ a:active{
         font-size: 1.8rem;
     }
 
+    .overlay{
+        display: none;
+    }
+
     .wrapper--m {
         padding: 0;
         max-width: unset;
@@ -332,6 +339,9 @@ a:active{
         gap: 1.5rem;
     }
 
+    .menu__item-desktop{
+        cursor: pointer;
+    }
     .menu__item--dropdown-desktop{
         position: relative;
     }
