@@ -47,6 +47,11 @@ body {
     overflow: hidden;
 }
 
+/* Prevent CSS transitions on page load with JS */
+.prevent-preload-transitions * {
+    transition: none !important;
+}
+
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
