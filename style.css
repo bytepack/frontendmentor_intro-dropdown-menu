@@ -197,14 +197,16 @@ a:active{
 }
 
 .menu__link--dropdown::after {
+    display: inline-block;
     content: url("/images/icon-arrow-down.svg");
     position: absolute;
     top: 0;
     left: 9rem;
+    transition: transform 0.3s;
 }
 
 .menu__item--open .menu__link--dropdown::after {
-    content: url("images/icon-arrow-up.svg");
+    transform: rotate(0.5turn);
 }
 
 .menu__icon {
@@ -335,12 +337,14 @@ a:active{
     }
 
     .menu__item--dropdown-desktop::after{
+        display: inline-block;
         content: url("images/icon-arrow-down.svg");
-        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+        transition: transform 0.3s;
     }
 
     .menu__item-desktop--open.menu__item--dropdown-desktop::after{
-        content: url("images/icon-arrow-up.svg");
+        transform: rotate(0.5turn);
     }
 
     .menu__item-desktop--open > .menu__link-desktop{
