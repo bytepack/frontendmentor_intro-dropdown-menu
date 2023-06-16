@@ -178,6 +178,7 @@ a:active{
 
 .menu__item{
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .menu--inner {
     overflow: hidden;
@@ -346,6 +347,7 @@ a:active{
 
     .menu__item-desktop{
         cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
     .menu__item--dropdown-desktop{
         position: relative;
